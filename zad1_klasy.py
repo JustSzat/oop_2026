@@ -18,10 +18,15 @@ class Person:
 
     def set_surname(self, surname):
         self.__surname = surname
+        self.__surname = surname.upper()
+        if self.__surname == "":
+            print("Uzupelnij nazwisko")
 
     def get_salary(self):
         return self.__salary
 
 p1 = Person("Jan", "Kowalski", 5000)
 p1.set_name("Katarzyna")
+p1.set_surname("Jackowska")
 print(p1.get_name())
+print(p1.get_surname())
