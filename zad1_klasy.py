@@ -25,8 +25,32 @@ class Person:
     def get_salary(self):
         return self.__salary
 
-p1 = Person("Jan", "Kowalski", 5000)
+
+
+    def set_salary(self, salary):
+        self.__salary = salary
+        if self.__salary == 4900:
+            print("- minimalne wynagrodzenie")
+        elif self.__salary > 4901 and self.__salary < 12000:
+            print(" -srednie wynagrodzenie w firmie")
+        else:
+            print(" - najwyzszy poziom wynagrodzen")
+
+
+
+
+
+
+p1 = Person("Jan", "Kowalski", 8888)
+p2 = Person("Weronika", "Kowal", 12000)
+p3 = Person("Emil", "Nowak", 4900)
 p1.set_name("Katarzyna")
 p1.set_surname("Jackowska")
+
 print(p1.get_name())
 print(p1.get_surname())
+
+p3.set_salary(12001)
+print(p3.get_name())
+print(p3.get_surname())
+print(p3.get_salary())
