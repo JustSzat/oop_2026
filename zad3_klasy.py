@@ -15,6 +15,10 @@ class Student:
 
 
 
-justyna = ("Justyna", "Szatkowska", [5, 5, 4, 3])
-tomasz = ("Tomasz", "Kowalski", [ 3, 4, 3, 3])
-janina = ("Janina", "Nowak", [5, 5, 5, 4])
+justyna = Student("Justyna", "Szatkowska", [5, 5, 4, 3])
+tomasz = Student("Tomasz", "Kowalski", [ 3, 4, 3, 3])
+janina = Student("Janina", "Nowak", [5, 5, 5, 4])
+
+justyna.get_name()
+justyna.get_surname()
+justyna.get_oceny()
