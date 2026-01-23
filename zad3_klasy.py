@@ -22,19 +22,19 @@ class Student:
     def get_oceny(self):
         print(f"Oceny: {self.__oceny}")
 
-    def set_oceny(self, oceny):
+    def set_nadpisz_oceny(self, oceny):
         self.__oceny = oceny
         print(f"Oceny: {oceny}")
 
+    def dodaj_ocene(self, ocena):
+        self.__oceny.append(ocena)
+        print(f"Oceny: {self.__oceny}")
 
 
 justyna = Student("Justyna", "Szatkowska", [5, 5, 4, 3])
 tomasz = Student("Tomasz", "Kowalski", [ 3, 4, 3, 3])
 janina = Student("Janina", "Nowak", [5, 5, 5, 4])
 
-justyna.get_name()
-justyna.set_name("Janina")
 
-tomasz.set_name("Jacek")
-janina.get_oceny()
-janina.set_oceny([3, 3, 3, 3])
+tomasz.get_oceny()
+tomasz.dodaj_ocene(5)
